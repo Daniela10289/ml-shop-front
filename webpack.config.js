@@ -14,8 +14,25 @@ module.exports = {
 		extensions: ['.js', '.jsx'],
 		alias: {
 			'@styles': path.resolve(__dirname, 'src/styles/'),
-			'@assets': path.resolve(__dirname, 'src/assets/')
-		}
+			'@assets': path.resolve(__dirname, 'src/assets/'),
+			'@components': path.resolve(__dirname, 'src/components/'),
+			'@pages': path.resolve(__dirname, 'src/pages/')
+		},
+		fallback: {
+			"fs": false,
+			"tls": false,
+			"net": false,
+			"path": false,
+			"zlib": false,
+			"http": false,
+			"https": false,
+			"stream": false,
+			"crypto": false,
+			"querystring": false,
+			"url": false,
+			"buffer": false,
+			"util": false
+		  } 
 	},
 	module: {
 		rules: [
