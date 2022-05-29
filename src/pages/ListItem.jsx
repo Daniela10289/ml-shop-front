@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import axios from "axios";
 import "@styles/ListItem.scss";
-import Header from "@components/Header";
 
 export default function ListItem() {    
 
@@ -18,8 +17,6 @@ export default function ListItem() {
           });
       };
 
-      console.log(Header.search + "nada");
-
       const [items, setItems] = useState([]);
       useEffect(() => {
         getItems().then((itemResponse) => {
@@ -33,23 +30,7 @@ export default function ListItem() {
                 <div className="col">
                     <table className="table">
                         <tbody>
-                            <tr>
-                                <th>Author</th>
-                                <th>Category</th>
-                                <th>Items</th>
-                                <th>Picture</th>
-                            </tr>
-                            {items.map((item) => {
-                                return (
-                                    <tr key={item.items}>
-                                        {/* <td>{item.items}</td> */}
-                                        <td>{item.categories}</td>
-                                        <td></td>
-                                        <td></td>
-                                    </tr>
-                                )
-                            })}
-                           
+                                                        
                         </tbody>
                     </table>
                 </div>
