@@ -1,6 +1,69 @@
 @import "vars";
 
-.table {
-    border: 1px, solid;
-    width: 100px;
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.cards {
+    background-color: var(--white);
+    border-radius: 4px;
+    line-height: 1;
+    padding: 0px 5px;
+    padding-bottom: 10px;
+}
+
+.img1 {
+    height: 180px;
+    width: 180px;
+    border-radius: 4px;
+    margin: 10px 10px;
+}
+
+.row {
+    width: 81%;
+}
+
+.categories {
+    display: flex;
+}
+
+.categories ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 60px;
+}
+
+.categories li{
+    padding: 8px 0px;
+    color: var(--gray-iron);
+}
+
+.items {
+    display: flex;
+    border-bottom: 1px solid var(--gray);
+    
+}
+
+.items-left {
+    margin: 10px;
+    width: 50%;
+    color: var(--gray-dark);
+}
+
+.items-right {
+    width: 20%;
+    margin: 30px; 
+    color: var(--gray-shadow);
+}
+
+span {
+    margin: 6px;
+}
+
+.freeShippingImg {
+    margin: 0px 10px;
 }

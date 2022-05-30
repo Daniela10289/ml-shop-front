@@ -28,8 +28,8 @@ export default function Header() {
                 <div className="row">
                     <div className="header">
                         <form className="form" onSubmit={handleOnSubmit}>    
-                        <img src={logo} alt="" />
-                            <input className="search" type="text" value={searchInput} onChange={e => setSearchInput(e.target.value)}/>
+                        <img src={logo} alt="logo" className="logo" />
+                            <input className="search" type="text" placeholder="Nunca dejes de buscar" value={searchInput} onChange={e => setSearchInput(e.target.value)}/>
                             <button className="button" type="submit">
                                 <img src={ic_Search} alt="search" />
                             </button>
