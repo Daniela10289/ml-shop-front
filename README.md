@@ -6,7 +6,7 @@ En esta plataforma encontrara un buscador de texto en donde podra ingresar palab
 
 ## Estrategia de diseño de aplicaciones
 
-Esta aplicación está diseñada consumir un servicio de API REST utilizando React integrado con Node Js y archivos de configuración para declarar rutas, configuraciones, y componentes.
+Esta aplicación está diseñada para consumir un servicio de API REST utilizando React integrado con Node Js y archivos de configuración para declarar rutas, configuraciones, y componentes.
 
 Esta aplicación se ha desarrollado utilizando React con router-dom, sass, babel, webpack etc., este proyecto está destinado a obtener y consumir API REST que manejen solicitudes http y devuelvan respuestas http json válidas.
 
@@ -47,8 +47,8 @@ En la pantalla principal podra realizar las siguiente solicitudes
 | Vista | URL |
 | ------ | ------ |
 | Inicio | http://localhost:3000/ |
-| Vista | ![](docs/assets/home.png){width='100px'} |
+| Vista | ![](docs/assets/home.png) |
 | Lista de procuctos | http://localhost:3000/item?search=Iphod |
-| Vista | ![](docs/assets/list.png){width='100px'} |
+| Vista | ![](docs/assets/list.png) |
 | Detalle del producto | http://localhost:3000/item/MLA899138095?search=Iphod |
-| Vista | ![](docs/assets/detail.png){width='100px'} |
+| Vista | ![](docs/assets/detail.png) |
