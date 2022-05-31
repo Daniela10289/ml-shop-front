@@ -5,8 +5,12 @@
     justify-content: center;
 }
 
-.cards {
+.cards-list {
+    border-radius: 4px;
     background-color: var(--white);
+}
+
+.cards {
     border-radius: 4px;
     line-height: 1;
     padding: 0px 5px;
@@ -64,6 +68,10 @@ span {
     margin: 6px;
 }
 
-.freeShippingImg {
+.free-shipping-img {
     margin: 0px 10px;
+}
+
+.link-item {
+    text-decoration: none;
 }

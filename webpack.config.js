@@ -16,7 +16,8 @@ module.exports = {
 			'@styles': path.resolve(__dirname, 'src/styles/'),
 			'@assets': path.resolve(__dirname, 'src/assets/'),
 			'@components': path.resolve(__dirname, 'src/components/'),
-			'@pages': path.resolve(__dirname, 'src/pages/')
+			'@pages': path.resolve(__dirname, 'src/pages/'),
+			'@services': path.resolve(__dirname, 'src/services/')
 		},
 		fallback: {
 			"fs": false,

@@ -1,0 +1,68 @@
+@import "vars";
+
+.img-detail {
+    max-width: 580px;
+    width: 100%;
+    border-radius: 4px;
+}
+
+.card {
+    background-color: var(--white);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    padding: 25px;
+    border-radius: 4px;
+}
+
+.item {
+    display: flex;
+}
+
+.item-id {
+    width: 100%;
+}
+
+.item-id p {
+    margin-top: 3px;
+    color: var(--gray-dark);
+}
+
+.item-id h2 {
+    margin: 0px;
+    color: var(--gray-dark);
+}
+
+.item-id h1 {
+    margin-bottom: 50px;
+    color: var(--gray-dark);
+}
+
+.left-item {
+    width: 70%;
+}
+
+.right-item {
+    width: 30%;
+}
+
+.button-compra {
+    background-color: var(--blue);
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    font-size: 16px;
+    color: var(--white);
+    width: 100%;
+    height: 38px;
+}
+
+.description h2 {
+    color: var(--gray-dark);
+}
+
+.description p {
+    color: var(--gray-iron);
+    line-height: 1.3em;
+}
