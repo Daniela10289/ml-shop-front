@@ -5,7 +5,6 @@ export const getItems = (search) => {
     return axios
       .get(`${config.baseHost}?search=${search}`)
       .then((res) => {
-        console.log(res);
         return res.data
       })
       .catch((error) => {
@@ -18,7 +17,6 @@ export const getItemDetail = (id) => {
 return axios
     .get(`${config.baseHost}/${id}`)
     .then((res) => {
-    console.log(res);
     return res.data;
     })
     .catch((error) => {

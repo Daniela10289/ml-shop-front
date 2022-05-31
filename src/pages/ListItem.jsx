@@ -13,12 +13,12 @@ export default function ListItem() {
     const [items, setItems] = useState([]);
     const [categories, setCategories] = useState([]);
 
-      useEffect(() => {
-        getItems(search).then((itemResponse) => {
-          setItems(itemResponse.items);
-          setCategories(itemResponse.categories);
-        })
-      }, [search]);
+    useEffect(() => {
+      getItems(search).then((itemResponse) => {
+        setItems(itemResponse.items);
+        setCategories(itemResponse.categories);
+      })
+    }, [search]);
 
     return (
       <div className="container">
