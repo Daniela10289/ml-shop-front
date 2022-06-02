@@ -69,7 +69,9 @@ Para iniciar los casos de prueba es necesario ejecutar el siguiente comando
 npm test
 ```
 
-Una vez ejecutado el comando se podra observar en la consola los resultados de cada prueba
+Una vez ejecutado el comando se podra observar en la terminal los resultados de cada prueba.
+
+![](docs/assets/result-test.png)
 
 # Pruebas e2e
 
@@ -83,12 +85,22 @@ La estrategia utilizada para las pruebas e2e fue realizar la simulación de acci
 
 #### Requisitos necesarios para las pruebas e2e
 
-- Tener inciado el  servidor del backend y el fronted 
+- Tener inciado el servidor del backend y el fronted con sus respectivos comandos de inicio
 - Tener una configuración previa en su sistema operativo de cypress, en caso de que no cumpla con este requisito siga las instruciones de la documentación oficial [https://www.cypress.io/]
 - Una vez lista la configuración de cypress ejecute el siguiente comando en una terminal nueva
 
+
 ```sh
 npm run test:e2e
+```
+Al ejecutar este comando se podra observar el resultado de las pruebas desde la terminal
+
+![](docs/assets/result-e2e.png)
+
+Para visualizar el proceso de las pruebas desde la interfaz grafica de cypress ejecute el siguiente comando
+
+```sh
+npm run cypress open
 ```
 
 ![](docs/assets/gif-e2e.gif)
