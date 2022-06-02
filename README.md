@@ -58,7 +58,7 @@ En la pantalla principal podrá realizar las siguientes solicitudes
 | Vista | ![](docs/assets/home.png) |
 | Lista de productos | http://localhost:3000/item?search=Funko Se observa la lista de productos según el parámetro ingresado en el buscador |
 | Vista | ![](docs/assets/list.png) |
-| Detalle del producto | http://localhost:3000/item/MLA1138926015?search=Funko |
+| Detalle del producto | http://localhost:3000/item/MLA1138926015?search=Funko Se observa el detalle del producto seleccionado |
 | Vista | ![](docs/assets/detail.png) |
 
 # Pruebas unitarias
