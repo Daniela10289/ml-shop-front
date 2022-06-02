@@ -28,6 +28,9 @@ export default function ListItem() {
 
   useEffect(() => {
     getItems(search).then((itemResponse) => {
+      if (!itemResponse.items.length){
+        alert("No se encontraron resultados, por favor ingrese otro parámetro de búsqueda");
+      }
       setItems(itemResponse.items);
       setCategories(itemResponse.categories);
     })
