@@ -20,7 +20,7 @@ export default function ItemDetail() {
     <div className="container">
       <div className="row">
         <div className="categories">
-          <ul className="">
+          <ul role="categories-ul">
             {categories.map((c, index) => {
               return (
                 <li key={c}>
@@ -36,7 +36,7 @@ export default function ItemDetail() {
           <div className="card">
             <div className="left-item">
                 <div className="row">
-                    <img className="img-detail" alt="" src={detail.picture} />
+                    <img role="img-id" className="img-detail" alt="Imagen de detalle" src={detail.picture} />
                 </div>
                 <div className="row">
                     <div className="item">
@@ -54,7 +54,7 @@ export default function ItemDetail() {
                     : (<p>{detail.condition} - {detail.sold_quantity} vendidos</p>) }
                     <h2>{detail.title}</h2>
                     <h1>$ {detail.price.amount}</h1>
-                    <button className="button-compra">Comprar</button>
+                    <button role="button-detail" className="button-compra">Comprar</button>
                 </div>
             </div>
             </div>

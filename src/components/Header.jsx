@@ -2,8 +2,7 @@ import React, {useState} from "react";
 import "@styles/Header.scss";
 import ic_Search from "@assets/ic_Search.png";
 import logo from "@assets/Logo_ML.png";
-import { useNavigate } from "react-router-dom";
-import { useSearchParams,  } from "react-router-dom";
+import { useSearchParams, useNavigate} from "react-router-dom";
 
 export default function Header() {
     const navigate = useNavigate();
@@ -30,7 +29,7 @@ export default function Header() {
                         <form className="form" onSubmit={handleOnSubmit}>    
                         <img src={logo} alt="logo" className="logo" />
                             <input className="search" type="text" placeholder="Nunca dejes de buscar" value={searchInput} onChange={e => setSearchInput(e.target.value)}/>
-                            <button className="button" type="submit">
+                            <button id="search-button" role="button-id" className="button" type="submit">
                                 <img src={ic_Search} alt="search" />
                             </button>
                         </form>

@@ -24,7 +24,7 @@ export default function ListItem() {
       <div className="container">
         <div className="row">
           <div className="categories">
-            <ul className="">
+            <ul role="categories-ul">
               {categories.map((c, index) => {
                 return (
                   <li key={c}>
@@ -45,12 +45,12 @@ export default function ListItem() {
                 }}>
                 <div className="cards">
                   <div className="items">
-                    <img className="img1" src={item.picture} alt="" />
+                    <img role="img-id" className="img1" src={item.picture} alt="Imagen de un item" />
                     <div className="items-left">
                       <h2>
                         $ {item.price.amount}
                         {item.free_shipping === true ? (
-                          <img className="free-shipping-img" src={freeShippingImg}/> ) : ("")}{" "}
+                          <img className="free-shipping-img" alt="Imagen de free shipping" src={freeShippingImg}/> ) : ("")}{" "}
                       </h2>
                       <p>{item.title}</p>
                     </div>
