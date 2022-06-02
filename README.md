@@ -75,8 +75,6 @@ Una vez ejecutado el comando se podra observar en la terminal los resultados de 
 
 # Pruebas e2e
 
-Para iniciar los casos de prueba es necesario seguir las indicaciones descritas a continuación.
-
 Las preubas e2e fueron realizadas con la herramienta cypress, la cual es una herramienta muy poderosa para realizar pruebas e2e y pruebas de intregración en aplicaciones web.
 
 #### Estrategia de prueba
