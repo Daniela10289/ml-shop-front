@@ -52,3 +52,43 @@ En la pantalla principal podra realizar las siguiente solicitudes
 | Vista | ![](docs/assets/list.png) |
 | Detalle del producto | http://localhost:3000/item/MLA899138095?search=Iphod |
 | Vista | ![](docs/assets/detail.png) |
+
+# Pruebas unitarias
+
+Esta sección explica cómo ejecutar las pruebas unitarias del proyecto
+
+#### Estrategia de prueba
+
+Escribir casos de prueba específicos antes de comenzar el desarrollo de la funcionalidad es una excelente manera de ahorrar validaciones o extensiones de alcance innecesarias, siguiendo la ideología de Jest he escrito casos de prueba específicos para validar cada componente necesario para la funcionalidad de la aplicación.
+
+#### Ejecutando las pruebas unitarias
+
+Para iniciar los casos de prueba es necesario ejecutar el siguiente comando
+
+```sh
+npm test
+```
+
+Una vez ejecutado el comando se podra observar en la consola los resultados de cada prueba
+
+# Pruebas e2e
+
+Para iniciar los casos de prueba es necesario seguir las indicaciones descritas a continuación.
+
+Las preubas e2e fueron realizadas con la herramienta cypress, la cual es una herramienta muy poderosa para realizar pruebas e2e y pruebas de intregración en aplicaciones web.
+
+#### Estrategia de prueba
+
+La estrategia utilizada para las pruebas e2e fue realizar la simulación de acciones que un usuario de la aplicación realizaria desde que ingresa al sitio, realiza una busqueda (en este caso ingresando el parámetro "Funko Pop"), observa los resultados obtenidos por el servidor backend, da clic al primer resultado encontrado y posteriormente es dirigido al detalle del producto donde se encuentra información como categorias, titulo, precio, descripción y opción de compra, etc.
+
+#### Requisitos necesarios para las pruebas e2e
+
+- Tener inciado el  servidor del backend y el fronted 
+- Tener una configuración previa en su sistema operativo de cypress, en caso de que no cumpla con este requisito siga las instruciones de la documentación oficial [https://www.cypress.io/]
+- Una vez lista la configuración de cypress ejecute el siguiente comando en una terminal nueva
+
+```sh
+npm run test:e2e
+```
+
+![](docs/assets/gif-e2e.gif)
