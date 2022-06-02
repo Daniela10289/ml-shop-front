@@ -4,26 +4,40 @@ import { useSearchParams,  } from "react-router-dom";
 import freeShippingImg from "@assets/ic_shipping.png";
 import { Link } from "react-router-dom";
 import { getItems } from "@services/items";
+import DocumentMeta from "react-document-meta";
 
 export default function ListItem() {  
-  
-    const [searchParams, setSearchParams] = useSearchParams();
-    const search = searchParams.get("search");
 
-    const [items, setItems] = useState([]);
-    const [categories, setCategories] = useState([]);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const search = searchParams.get("search");
 
-    useEffect(() => {
-      getItems(search).then((itemResponse) => {
-        setItems(itemResponse.items);
-        setCategories(itemResponse.categories);
-      })
-    }, [search]);
+  const [items, setItems] = useState([]);
+  const [categories, setCategories] = useState([]);
+
+  const meta = {
+    title: search + " | ML Shop",
+    description: "Productos de la mejor calidad y a los mejores precios",
+    canonical: "http://localhost:3000/item",
+    meta: {
+      charset: "utf-8",
+      name: {
+        keywords: "enviogratis"
+      }
+    }
+  };
+
+  useEffect(() => {
+    getItems(search).then((itemResponse) => {
+      setItems(itemResponse.items);
+      setCategories(itemResponse.categories);
+    })
+  }, [search]);
 
     return (
       <div className="container">
         <div className="row">
           <div className="categories">
+          <DocumentMeta {...meta} />
             <ul role="categories-ul">
               {categories.map((c, index) => {
                 return (

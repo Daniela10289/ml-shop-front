@@ -8,7 +8,7 @@
     "test:watch": "jest --watch",
     "start": "webpack serve --open",
     "build": "webpack --mode production",
-    "cy:run": "cypress run"
+    "test:e2e": "cypress run"
   },
   "repository": {
     "type": "git",
@@ -29,6 +29,7 @@
     "html-loader": "^3.1.0",
     "html-webpack-plugin": "^5.5.0",
     "react": "^18.1.0",
+    "react-document-meta": "^3.0.0-beta.2",
     "react-dom": "^18.1.0",
     "react-router-dom": "^6.3.0",
     "webpack": "^5.72.1",
@@ -47,6 +48,7 @@
     "jest-environment-jsdom": "^28.1.0",
     "mini-css-extract-plugin": "^2.6.0",
     "msw": "^0.42.0",
+    "prettier": "2.6.2",
     "sass": "^1.52.1",
     "sass-loader": "^13.0.0",
     "style-loader": "^3.3.1"
@@ -57,8 +59,7 @@
     ],
     "testEnvironment": "jsdom",
     "moduleNameMapper": {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/assetsTransformer.js",
-      "\\.(css|less)$": "<rootDir>/assetsTransformer.js",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga|css|less)$": "<rootDir>/src/__test__/assetsTransformer.js",
       "\\.(styl|scss|css)$": "<rootDir>/src/__mocks__/styleMock.js",
       "^@components(.*)$": "<rootDir>/src/components$1",
       "^@assets(.*)$": "<rootDir>/src/assets$1",
